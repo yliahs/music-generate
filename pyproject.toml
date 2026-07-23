@@ -1,0 +1,27 @@
+[project]
+name = "composer-engine"
+version = "0.1.0"
+description = "AI Native Music Composition Engine"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.0",
+    "fastmcp>=3.4",
+    "pretty-midi>=0.2.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/composer_engine"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
