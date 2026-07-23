@@ -135,7 +135,7 @@ MCP Tool 接收调用 → 创建 Command → Composer.execute(command)
 ### 代码结构
 
 ```
-music-gene/
+music-generate/
 ├── docs/
 │   ├── REQUIREMENTS.md
 │   └── TECHNICAL.md

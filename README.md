@@ -35,7 +35,7 @@ Composer Engine 是一个面向 AI 的音乐创作中间件。它通过 **MCP (M
 
 ```bash
 # 克隆项目
-git clone <repo-url> && cd music-gene
+git clone <repo-url> && cd music-generate
 
 # 安装依赖
 uv sync
@@ -59,7 +59,7 @@ uv run python -m composer_engine.server.mcp_server
     "composer-engine": {
       "command": "uv",
       "args": ["run", "python", "-m", "composer_engine.server.mcp_server"],
-      "cwd": "<你的项目路径>/music-gene"
+      "cwd": "<你的项目路径>/music-generate"
     }
   }
 }
@@ -294,7 +294,7 @@ Inspiration → Composition → Arrangement → Production → Export
 ## 📁 工程结构
 
 ```
-music-gene/
+music-generate/
 ├── docs/
 │   ├── REQUIREMENTS.md          # 完整需求文档（10 个 Phase）
 │   └── TECHNICAL.md             # 技术架构文档
